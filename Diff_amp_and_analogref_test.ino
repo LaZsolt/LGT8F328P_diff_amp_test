@@ -33,7 +33,12 @@ void loop() {
   analogReference(INTERNAL4V096);
   Serial.println("Ref: 4.096V");
   Sprintline( "A7: " , analogRead(A7) , " mV" );
-  Sprintline( "A3: " , analogRead(A3) , " mV \n-----------" );
+  Sprintline( "A3: " , analogRead(A3) , " mV" );
+  Serial.println();
+  analogReference(DEFAULT);
+  Serial.println("Ref: DEFAULT");
+  Sprintline( "A7: " , analogRead(A7) , "" );
+  Sprintline( "A3: " , analogRead(A3) , "\n-----------" );
 
   if ( analogRead(A3) > analogRead(A7) ) {
     Serial.println("*********************************************************************");
