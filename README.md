@@ -20,6 +20,10 @@ A3: 838 mV
 Ref: 4.096V
 A7: 889 mV
 A3: 825 mV 
+
+Ref: DEFAULT
+A7: 737
+A3: 676
 -----------
 Ref: 1,024V 
  A7-A3 = 100 mV 
